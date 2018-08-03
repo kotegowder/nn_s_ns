@@ -40,7 +40,7 @@ int main(void)
 {
     serial_init();
 		
-    serial_print("\nSecure NN is running\r\n");
+    printf("\nSecure NN is running %s\r\n", __DATE__);
 	
 		while(1);
 }

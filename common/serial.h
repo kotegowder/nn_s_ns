@@ -29,4 +29,6 @@ void serial_init(void);
  */
 void serial_print(char *str);
 
+#define printf(fmt,...) {char buf[64]={0}; sprintf(buf, fmt,__VA_ARGS__); serial_print(buf);}
+
 #endif /* __SERIAL_H__ */
